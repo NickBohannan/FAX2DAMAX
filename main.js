@@ -1,3 +1,4 @@
+require('dotenv').config()
 const nodemailer = require('nodemailer')
 
 function sleep(milliseconds) {
@@ -17,7 +18,7 @@ async function fax2daMax () {
     secure: false,
     auth: {
       user: "palhealthtechnologies@gmail.com",
-      pass: "uldoRlYt"
+      pass: "process.env.PASSWORD"
     }
   });
 
